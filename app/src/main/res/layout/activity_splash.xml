@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="301.5dp"
+        android:layout_height="107dp"
+        android:background="@drawable/fullsizerendertransparent"
+        android:layout_gravity="center|center_horizontal"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="29.5dp"
+        android:layout_marginRight="29.5dp"
+
+
+        />
+
+    </LinearLayout>

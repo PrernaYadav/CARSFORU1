@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Bidding Started"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/carIDbid"/>
+            <TextView
+                android:id="@+id/carNamebid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hyundai i20 vtech"
+                android:textColor="@color/AppColor"/>
+            <TextView
+                android:id="@+id/carFuelbid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diesel"
+                android:layout_marginTop="10dp"
+
+                android:textColor="@color/gray"/>
+            <TextView
+                android:id="@+id/carKmbid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10,000Km"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/gray"/>
+            <TextView
+                android:id="@+id/carLocationbid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gurgaon"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/gray"/>
+            <TextView
+                android:id="@+id/carModelbid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2011 Model"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/gray"/>
+            <TextView
+                android:id="@+id/carTransmissionbid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Automatic"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/gray"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/countdownTimerbid"
+                android:text="time"
+                android:textColor="@color/AppColor"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <ImageView
+                android:id="@+id/carImagebid"
+                android:layout_width="157.5dp"
+                android:layout_height="97dp"
+                android:src="@drawable/carsforuappicon"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CURRENT BID: "
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/green"/>
+                <TextView
+                    android:id="@+id/currentbid1bid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200000"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/green"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/raisebybid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RAISE BY: 2,000 INR"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/green"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MAX BID:INR  "
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/green"/>
+                <TextView
+                    android:id="@+id/maxbidbid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200000"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/green"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:weightSum="2">
+        <ImageView
+            android:id="@+id/minusbidbid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons8minus"
+            android:layout_weight="1"
+android:padding="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/plusbidbid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons8plus"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_marginLeft="0dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

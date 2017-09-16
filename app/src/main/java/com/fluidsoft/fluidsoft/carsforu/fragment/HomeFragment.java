@@ -76,7 +76,7 @@ public class HomeFragment extends Fragment implements AdapterView.OnItemClickLis
     @Override
     public View onCreateView(LayoutInflater inflater,
                              @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-       
+
 
         View vw = inflater.inflate(R.layout.fragment_home, container, false);
         lv = (ListView) vw.findViewById(R.id.listViewhome);
